@@ -55,7 +55,9 @@ dependencies {
 
     // Adding the local library dependency here.
 
-    implementation 'com.github.RedEyesNCode:SecondsPicker-Android77:1.0.0'
+    implementation 'com.github.jitpack:android-example:1.0.1'
+
+    implementation project(path: ':secondspicker')
 
 
 
