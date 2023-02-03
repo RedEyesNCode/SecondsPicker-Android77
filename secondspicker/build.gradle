@@ -8,13 +8,13 @@ plugins {
 }
 publishing {
     publications {
-        mavenJava(MavenPublication) {
-            groupId = 'com.redeyesncode.secondspicker'
+        release(MavenPublication) {
+            groupId = 'com.github.RedEyesNCode'
             artifactId = 'secondspicker'
-            version = '1.0.3'
+            version = '1.0.4'
 
         }
-        publishToMavenLocal
+
     }
 }
 android {
