@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        style="@style/MyRounded.MaterialComponents.MaterialAlertDialog"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/mainLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/MyRounded.MaterialComponents.MaterialAlertDialog"
+            android:orientation="vertical"
+            android:background="@color/material_blue">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/select_time"
+                android:id="@+id/tvDialogTitle"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/_12sdp"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_6sdp"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1.6"
+                    android:fontFamily="sans-serif-black"
+
+                    android:text="Hours"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1.6"
+                    android:fontFamily="sans-serif-black"
+
+                    android:text="Minutes"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1.6"
+                    android:fontFamily="sans-serif-black"
+
+                    android:text="Seconds"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_6sdp"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:background="@color/white">
+                <NumberPicker
+                    android:layout_width="wrap_content"
+
+                    android:layout_weight="1"
+                    android:id="@+id/npHour"
+                    android:background="@drawable/number_picker_bg"
+                    android:layout_height="@dimen/_55sdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_height="match_parent"/>
+
+
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/number_picker_bg"
+                    android:id="@+id/npMinutes"
+
+                    android:layout_height="@dimen/_55sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+
+                    android:text=":"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_height="match_parent"/>
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/number_picker_bg"
+                    android:id="@+id/npSeconds"
+
+                    android:layout_height="@dimen/_55sdp"/>
+            </LinearLayout>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:paddingVertical="@dimen/_8sdp"
+                android:orientation="horizontal"
+                android:id="@+id/rbtnGrp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:text="AM"
+                    android:buttonTint="@color/white"
+                    android:id="@+id/rbtnAM"
+                    android:fontFamily="sans-serif-black"
+
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:text="PM"
+                    android:id="@+id/rbtnPM"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:buttonTint="@color/white"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_6sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/white">
+                <LinearLayout
+                    android:id="@+id/btnOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/material_blue"
+                    android:fontFamily="sans-serif"
+                    android:paddingHorizontal="@dimen/_25sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:text="OK"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btnCancel"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/material_blue"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:paddingHorizontal="@dimen/_25sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:text="Cancel"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

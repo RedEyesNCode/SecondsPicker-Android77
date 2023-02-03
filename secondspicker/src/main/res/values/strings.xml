@@ -1,0 +1,4 @@
+<resources>
+    <string name="pick_seconds">Pick Seconds</string>
+    <string name="select_time">Select Time</string>
+</resources>
