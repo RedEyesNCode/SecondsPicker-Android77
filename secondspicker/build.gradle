@@ -8,7 +8,7 @@ plugins {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            groupId = 'com.github.RedEyesNCode'
+            groupId = 'com.redeyesncode.secondspicker'
             artifactId = 'secondspicker'
             version = '1.0.0'
         }
