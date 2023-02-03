@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity(),SecondsPickerDialog.NumberPickerListene
         binding = ActivityMainBinding.inflate(layoutInflater)
         binding.secondsPicker.setOnClickListener {
 
+
             var secondsPickerDialog = SecondsPickerDialog(this,false,this)
             secondsPickerDialog.showDialog()
 
