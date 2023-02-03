@@ -3,18 +3,15 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
-    id 'kotlin-android'
 
 }
 publishing {
     publications {
-        release(MavenPublication) {
+        mavenJava(MavenPublication) {
             groupId = 'com.github.RedEyesNCode'
             artifactId = 'secondspicker'
-            version = '1.0.4'
-
+            version = '1.0.5'
         }
-
     }
 }
 android {
