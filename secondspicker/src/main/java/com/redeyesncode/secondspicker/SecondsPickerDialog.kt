@@ -50,6 +50,8 @@ class SecondsPickerDialog(context: Context,is24HourFormat:Boolean,numberPickerLi
             val seconds = binding.npSeconds.value
             val isAm = binding.rbtnAM.isChecked
             listener.onSelectTime(hour,minutes,seconds,isAm)
+            dialog.dismiss()
+
         }
 
 
