@@ -57,6 +57,7 @@ dependencies {
 
     implementation 'com.github.jitpack:android-example:1.0.1'
 
+    // Do not use the jitpack dependency here.
     implementation project(path: ':secondspicker')
 
 
