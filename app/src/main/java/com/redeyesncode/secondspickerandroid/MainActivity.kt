@@ -8,7 +8,7 @@ import com.redeyesncode.secondspickerandroid.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(),SecondsPickerDialog.NumberPickerListeners {
 
-    private lateinit var binding:ActivityMainBinding
+        private lateinit var binding: ActivityMainBinding
 
     override fun onSelectTime(hour: Int, minute: Int, seconds: Int, isAmChecked: Boolean) {
         Snackbar.make(binding.root,"$hour : $minute : $seconds is selected time.", Snackbar.LENGTH_SHORT)
