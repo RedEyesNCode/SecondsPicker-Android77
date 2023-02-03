@@ -7,11 +7,22 @@ plugins {
 }
 publishing {
     publications {
-        mavenJava(MavenPublication) {
+       /* mavenJava(MavenPublication) {
             groupId = 'com.redeyesncode.secondspicker'
             artifactId = 'secondspicker'
             version = '1.0.6'
+        }*/
+        create(MavenPublication) {
+            groupId = "com.redeyesncode.secondspicker"
+            artifactId = "secondspicker"
+            version = "1.0.7"
         }
+
+        /* mavenJava(MavenPublication) {
+            groupId = 'com.github.RedEyesNCode'
+            artifactId = 'secondspicker'
+            version = '1.0.0'
+        }*/
     }
 }
 android {
