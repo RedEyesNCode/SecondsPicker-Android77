@@ -27,6 +27,13 @@ _Put this at the end of the gradle file._
   }
   }
   }
+#### Step 3 : Add jitpack.yml file at Project level 
+`jdk:
+  - openjdk11
+before_install:
+  - ./scripts/prepareJitpackEnvironment.sh
+  `
+
 
 #### Step 4
 _Run the following gradle task_
